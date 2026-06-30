@@ -13,7 +13,7 @@ app.get("/items", async (req, res) => {
       .status(200)
       .json({ message: "data has been retrived ", data: items });
   } catch (error) {
-    res.status(500).json({ message: "failed to retrive items" });
+    res.status(500).json({ message: "failed to retrive item" });
   }
 });
 
